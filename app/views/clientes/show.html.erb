@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+<h1> Datos cliente: <h1>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @cliente.nombre %>
+</p>
+
+<p>
+  <strong>Apellido Paterno:</strong>
+  <%= @cliente.apellido_p %>
+</p>
+
+<p>
+  <strong>Apellido Materno:</strong>
+  <%= @cliente.apellido_m %>
+</p>
+
+<p>
+  <strong>Rut:</strong>
+  <%= @cliente.rut %>
+</p>
+
+<p>
+  <strong>Digito verificador:</strong>
+  <%= @cliente.verifi %>
+</p>
+
+<%= link_to 'Editar', edit_cliente_path(@cliente) %> |
+<%= link_to 'Volver', clientes_path %>
