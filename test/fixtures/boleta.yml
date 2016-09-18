@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  monto: 1
+  descuento: 1
+  fecha: 2016-09-18
+  pedido_id: 1
+
+two:
+  monto: 1
+  descuento: 1
+  fecha: 2016-09-18
+  pedido_id: 1

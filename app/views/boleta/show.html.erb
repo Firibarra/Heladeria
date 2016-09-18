@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Monto:</strong>
+  <%= @boletum.monto %>
+</p>
+
+<p>
+  <strong>Descuento:</strong>
+  <%= @boletum.descuento %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @boletum.fecha %>
+</p>
+
+<p>
+  <strong>Pedido:</strong>
+  <%= @boletum.pedido_id %>
+</p>
+
+<%= link_to 'Edit', edit_boletum_path(@boletum) %> |
+<%= link_to 'Back', boleta_path %>
