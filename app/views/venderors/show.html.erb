@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @venderor.nombre %>
+</p>
+
+<p>
+  <strong>Apellido Paterno:</strong>
+  <%= @venderor.apellido_p %>
+</p>
+
+<p>
+  <strong>Apellido Materno:</strong>
+  <%= @venderor.apellido_m %>
+</p>
+
+<p>
+  <strong>Rut:</strong>
+  <%= @venderor.rut %>
+</p>
+
+<p>
+  <strong>Codigo verificador:</strong>
+  <%= @venderor.verifi %>
+</p>
+
+<%= link_to 'Editar', edit_venderor_path(@venderor) %> |
+<%= link_to 'Volver', venderors_path %>

@@ -1,0 +1,1 @@
+json.array! @venderors, partial: 'venderors/venderor', as: :venderor

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Venderores:</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre:</th>
+      <th>Apellido Paterno:</th>
+      <th>Apellido materno:</th>
+      <th>Rut:</th>
+      <th>Cog verificador</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @venderors.each do |venderor| %>
+      <tr>
+        <td><%= venderor.nombre %></td>
+        <td><%= venderor.apellido_p %></td>
+        <td><%= venderor.apellido_m %></td>
+        <td><%= venderor.rut %></td>
+        <td><%= venderor.verifi %></td>
+        <td><%= link_to 'Ver', venderor %></td>
+        <td><%= link_to 'Editar', edit_venderor_path(venderor) %></td>
+        <td><%= link_to 'Eliminar', venderor, method: :delete, data: { confirm: 'Esta seguro que desea eliminar al cliente??' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nuevo venderor', new_venderor_path %>
