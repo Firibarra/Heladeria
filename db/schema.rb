@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160924151922) do
+ActiveRecord::Schema.define(version: 20160924180522) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -60,6 +60,33 @@ ActiveRecord::Schema.define(version: 20160924151922) do
     t.integer  "valor"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "helados", force: :cascade do |t|
+    t.integer  "valor"
+    t.integer  "tipo_id"
+    t.integer  "copo_id"
+    t.integer  "sabor_id"
+    t.integer  "salsa_id"
+    t.integer  "chip_id"
+    t.integer  "galletum_id"
+    t.integer  "bano_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "lista_helados", force: :cascade do |t|
+    t.integer  "pedido_id"
+    t.integer  "helado_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lista_sabors", force: :cascade do |t|
+    t.integer  "helado_id"
+    t.integer  "sabor"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "pedidos", force: :cascade do |t|

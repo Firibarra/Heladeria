@@ -1,0 +1,1 @@
+json.partial! "lista_helados/lista_helado", lista_helado: @lista_helado

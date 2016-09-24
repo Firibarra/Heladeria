@@ -1,0 +1,27 @@
+<%= form_for(lista_helado) do |f| %>
+  <% if lista_helado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(lista_helado.errors.count, "error") %> prohibited this lista_helado from being saved:</h2>
+
+      <ul>
+      <% lista_helado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pedido_id %>
+    <%= f.number_field :pedido_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :helado_id %>
+    <%= f.number_field :helado_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

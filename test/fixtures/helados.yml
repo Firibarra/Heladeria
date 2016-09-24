@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  valor: 1
+  tipo_id: 1
+  copo_id: 1
+  sabor_id: 1
+  salsa_id: 1
+  chip_id: 1
+  galletum_id: 1
+  bano_id: 1
+
+two:
+  valor: 1
+  tipo_id: 1
+  copo_id: 1
+  sabor_id: 1
+  salsa_id: 1
+  chip_id: 1
+  galletum_id: 1
+  bano_id: 1

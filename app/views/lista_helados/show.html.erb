@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pedido:</strong>
+  <%= @lista_helado.pedido_id %>
+</p>
+
+<p>
+  <strong>Helado:</strong>
+  <%= @lista_helado.helado_id %>
+</p>
+
+<%= link_to 'Edit', edit_lista_helado_path(@lista_helado) %> |
+<%= link_to 'Back', lista_helados_path %>

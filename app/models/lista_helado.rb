@@ -1,0 +1,2 @@
+class ListaHelado < ApplicationRecord
+end

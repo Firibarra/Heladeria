@@ -1,0 +1,2 @@
+class ListaSabor < ApplicationRecord
+end

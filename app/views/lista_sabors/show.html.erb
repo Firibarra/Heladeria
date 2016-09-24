@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Helado:</strong>
+  <%= @lista_sabor.helado_id %>
+</p>
+
+<p>
+  <strong>Sabor:</strong>
+  <%= @lista_sabor.sabor %>
+</p>
+
+<%= link_to 'Edit', edit_lista_sabor_path(@lista_sabor) %> |
+<%= link_to 'Back', lista_sabors_path %>

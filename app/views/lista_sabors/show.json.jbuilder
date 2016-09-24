@@ -1,0 +1,1 @@
+json.partial! "lista_sabors/lista_sabor", lista_sabor: @lista_sabor

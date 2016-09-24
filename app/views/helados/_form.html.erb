@@ -1,0 +1,57 @@
+<%= form_for(helado) do |f| %>
+  <% if helado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(helado.errors.count, "error") %> prohibited this helado from being saved:</h2>
+
+      <ul>
+      <% helado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :valor %>
+    <%= f.number_field :valor %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tipo_id %>
+    <%= f.number_field :tipo_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :copo_id %>
+    <%= f.number_field :copo_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sabor_id %>
+    <%= f.number_field :sabor_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :salsa_id %>
+    <%= f.number_field :salsa_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :chip_id %>
+    <%= f.number_field :chip_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :galletum_id %>
+    <%= f.number_field :galletum_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :bano_id %>
+    <%= f.number_field :bano_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

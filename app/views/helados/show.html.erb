@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @helado.valor %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @helado.tipo_id %>
+</p>
+
+<p>
+  <strong>Copo:</strong>
+  <%= @helado.copo_id %>
+</p>
+
+<p>
+  <strong>Sabor:</strong>
+  <%= @helado.sabor_id %>
+</p>
+
+<p>
+  <strong>Salsa:</strong>
+  <%= @helado.salsa_id %>
+</p>
+
+<p>
+  <strong>Chip:</strong>
+  <%= @helado.chip_id %>
+</p>
+
+<p>
+  <strong>Galletum:</strong>
+  <%= @helado.galletum_id %>
+</p>
+
+<p>
+  <strong>Bano:</strong>
+  <%= @helado.bano_id %>
+</p>
+
+<%= link_to 'Edit', edit_helado_path(@helado) %> |
+<%= link_to 'Back', helados_path %>

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :lista_helados
+  resources :lista_sabors
+  resources :helados
   resources :sabors
   resources :salsas
   resources :chips

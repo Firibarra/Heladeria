@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Helados</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Valor</th>
+      <th>Tipo</th>
+      <th>Copo</th>
+      <th>Sabor</th>
+      <th>Salsa</th>
+      <th>Chip</th>
+      <th>Galletum</th>
+      <th>Bano</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @helados.each do |helado| %>
+      <tr>
+        <td><%= helado.valor %></td>
+        <td><%= helado.tipo_id %></td>
+        <td><%= helado.copo_id %></td>
+        <td><%= helado.sabor_id %></td>
+        <td><%= helado.salsa_id %></td>
+        <td><%= helado.chip_id %></td>
+        <td><%= helado.galletum_id %></td>
+        <td><%= helado.bano_id %></td>
+        <td><%= link_to 'Show', helado %></td>
+        <td><%= link_to 'Edit', edit_helado_path(helado) %></td>
+        <td><%= link_to 'Destroy', helado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Helado', new_helado_path %>

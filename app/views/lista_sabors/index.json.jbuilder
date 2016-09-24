@@ -1,0 +1,1 @@
+json.array! @lista_sabors, partial: 'lista_sabors/lista_sabor', as: :lista_sabor

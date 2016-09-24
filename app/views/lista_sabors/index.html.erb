@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lista Sabors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Helado</th>
+      <th>Sabor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lista_sabors.each do |lista_sabor| %>
+      <tr>
+        <td><%= lista_sabor.helado_id %></td>
+        <td><%= lista_sabor.sabor %></td>
+        <td><%= link_to 'Show', lista_sabor %></td>
+        <td><%= link_to 'Edit', edit_lista_sabor_path(lista_sabor) %></td>
+        <td><%= link_to 'Destroy', lista_sabor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lista Sabor', new_lista_sabor_path %>
