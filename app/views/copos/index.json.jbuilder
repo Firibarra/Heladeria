@@ -1,0 +1,1 @@
+json.array! @copos, partial: 'copos/copo', as: :copo

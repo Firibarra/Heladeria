@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @galletum.descripcion %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @galletum.valor %>
+</p>
+
+<%= link_to 'Edit', edit_galletum_path(@galletum) %> |
+<%= link_to 'Back', galleta_path %>

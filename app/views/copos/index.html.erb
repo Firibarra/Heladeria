@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Copos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Descripcion</th>
+      <th>Valor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @copos.each do |copo| %>
+      <tr>
+        <td><%= copo.descripcion %></td>
+        <td><%= copo.valor %></td>
+        <td><%= link_to 'Show', copo %></td>
+        <td><%= link_to 'Edit', edit_copo_path(copo) %></td>
+        <td><%= link_to 'Destroy', copo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Copo', new_copo_path %>

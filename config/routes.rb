@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  resources :sabors
+  resources :salsas
+  resources :chips
+  resources :galleta
+  resources :banos
+  resources :copos
+  resources :tipos
   resources :boleta
   resources :pedidos
   resources :venderors

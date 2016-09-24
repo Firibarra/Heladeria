@@ -1,0 +1,1 @@
+json.array! @salsas, partial: 'salsas/salsa', as: :salsa

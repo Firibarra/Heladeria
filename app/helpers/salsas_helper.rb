@@ -1,0 +1,2 @@
+module SalsasHelper
+end

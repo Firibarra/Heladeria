@@ -1,0 +1,2 @@
+module GalletaHelper
+end

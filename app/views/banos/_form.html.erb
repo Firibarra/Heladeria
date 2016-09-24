@@ -1,0 +1,27 @@
+<%= form_for(bano) do |f| %>
+  <% if bano.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bano.errors.count, "error") %> prohibited this bano from being saved:</h2>
+
+      <ul>
+      <% bano.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :descripcion %>
+    <%= f.text_field :descripcion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :valor %>
+    <%= f.number_field :valor %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

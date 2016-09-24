@@ -1,0 +1,2 @@
+class Bano < ApplicationRecord
+end

@@ -1,0 +1,1 @@
+json.partial! "salsas/salsa", salsa: @salsa

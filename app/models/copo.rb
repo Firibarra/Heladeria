@@ -1,0 +1,2 @@
+class Copo < ApplicationRecord
+end

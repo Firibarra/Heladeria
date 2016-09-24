@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @chip.descripcion %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @chip.valor %>
+</p>
+
+<%= link_to 'Edit', edit_chip_path(@chip) %> |
+<%= link_to 'Back', chips_path %>

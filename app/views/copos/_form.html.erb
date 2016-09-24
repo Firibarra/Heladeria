@@ -1,0 +1,27 @@
+<%= form_for(copo) do |f| %>
+  <% if copo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(copo.errors.count, "error") %> prohibited this copo from being saved:</h2>
+
+      <ul>
+      <% copo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :descripcion %>
+    <%= f.text_field :descripcion %>
+  </div>
+
+  <div class="field">
+    <%= f.label :valor %>
+    <%= f.number_field :valor %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

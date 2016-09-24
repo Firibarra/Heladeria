@@ -1,0 +1,2 @@
+class Salsa < ApplicationRecord
+end

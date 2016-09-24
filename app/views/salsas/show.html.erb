@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @salsa.descripcion %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @salsa.valor %>
+</p>
+
+<%= link_to 'Edit', edit_salsa_path(@salsa) %> |
+<%= link_to 'Back', salsas_path %>

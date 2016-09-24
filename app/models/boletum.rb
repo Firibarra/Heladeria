@@ -1,2 +1,3 @@
 class Boletum < ApplicationRecord
+  
 end

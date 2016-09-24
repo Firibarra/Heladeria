@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Salsas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Descripcion</th>
+      <th>Valor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @salsas.each do |salsa| %>
+      <tr>
+        <td><%= salsa.descripcion %></td>
+        <td><%= salsa.valor %></td>
+        <td><%= link_to 'Show', salsa %></td>
+        <td><%= link_to 'Edit', edit_salsa_path(salsa) %></td>
+        <td><%= link_to 'Destroy', salsa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Salsa', new_salsa_path %>

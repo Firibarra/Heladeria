@@ -1,0 +1,1 @@
+json.array! @banos, partial: 'banos/bano', as: :bano

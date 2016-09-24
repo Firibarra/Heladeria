@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160918232935) do
+ActiveRecord::Schema.define(version: 20160924151922) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "banos", force: :cascade do |t|
+    t.string   "descripcion"
+    t.integer  "valor"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "boleta", force: :cascade do |t|
     t.integer  "monto"
@@ -22,6 +29,13 @@ ActiveRecord::Schema.define(version: 20160918232935) do
     t.integer  "pedido_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "chips", force: :cascade do |t|
+    t.string   "descripcion"
+    t.integer  "valor"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "clientes", force: :cascade do |t|
@@ -34,10 +48,44 @@ ActiveRecord::Schema.define(version: 20160918232935) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "copos", force: :cascade do |t|
+    t.string   "descripcion"
+    t.integer  "valor"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "galleta", force: :cascade do |t|
+    t.string   "descripcion"
+    t.integer  "valor"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "pedidos", force: :cascade do |t|
     t.date     "fecha"
     t.integer  "cliente_id"
     t.integer  "venderor_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "sabors", force: :cascade do |t|
+    t.string   "descripcion"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "salsas", force: :cascade do |t|
+    t.string   "descripcion"
+    t.integer  "valor"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "tipos", force: :cascade do |t|
+    t.string   "descripcion"
+    t.integer  "valor"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
