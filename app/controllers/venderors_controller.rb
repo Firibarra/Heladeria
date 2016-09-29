@@ -72,6 +72,6 @@ class VenderorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def venderor_params
-      params.require(:venderor).permit(:nombre, :apellido_p, :apellido_m, :rut, :verifi)
+      params.require(:venderor).permit(:nombre, :apellido_p, :apellido_m, :rut, :verifi, :clave)
     end
 end

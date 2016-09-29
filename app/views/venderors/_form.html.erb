@@ -13,30 +13,35 @@
 
   <div class="field">
     <%= f.label :Nombre %>
-    <%= f.text_field :nombre %>
+    <%= f.text_field :nombre,:placeholder => "Nombre del vendedor" %>
   </div>
 
   <div class="field">
     <%= f.label :'Apellido Paterno' %>
-    <%= f.text_field :apellido_p %>
+    <%= f.text_field :apellido_p ,:placeholder => "Apellido paterno"%>
   </div>
 
   <div class="field">
     <%= f.label :'Apellido Materno' %>
-    <%= f.text_field :apellido_m %>
+    <%= f.text_field :apellido_m ,:placeholder => "Apellido materno" %>
   </div>
 
   <div class="field">
-    <%= f.label :Rut %>
-    <%= f.number_field :rut %>
+    <%= f.label :Rut ,"Rut. sin puntos ni espacios"%>
+    <%= f.number_field :rut ,:placeholder => "Ej:19033000"%>
   </div>
 
   <div class="field">
     <%= f.label :'Codigo verificador' %>
-    <%= f.text_field :verifi %>
+    <%= f.text_field :verifi,:placeholder => "Ej k" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :'Clave', "clave" %>
+    <%= f.text_field :clave %>
   </div>
 
   <div class="actions">
-    <%= f.submit :'Crear al cliente' %>
+    <%= f.submit "Crear al cliente", :class => "btn btn-primary" %>
   </div>
 <% end %>

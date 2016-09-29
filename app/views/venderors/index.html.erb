@@ -10,6 +10,7 @@
       <th>Apellido materno:</th>
       <th>Rut:</th>
       <th>Cog verificador</th>
+      <th>Clave</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,6 +23,7 @@
         <td><%= venderor.apellido_m %></td>
         <td><%= venderor.rut %></td>
         <td><%= venderor.verifi %></td>
+        <td><%= venderor.clave %></td>
         <td><%= link_to 'Ver', venderor %></td>
         <td><%= link_to 'Editar', edit_venderor_path(venderor) %></td>
         <td><%= link_to 'Eliminar', venderor, method: :delete, data: { confirm: 'Esta seguro que desea eliminar al cliente??' } %></td>
