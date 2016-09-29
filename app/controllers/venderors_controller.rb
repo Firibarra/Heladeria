@@ -1,8 +1,11 @@
 class VenderorsController < ApplicationController
-  before_action :set_venderor, only: [:show, :edit, :update, :destroy]
+  before_action :set_venderor, only: [:login, :show, :edit, :update, :destroy]
 
   # GET /venderors
   # GET /venderors.json
+  def login
+  end
+
   def index
     @venderors = Venderor.all
   end
